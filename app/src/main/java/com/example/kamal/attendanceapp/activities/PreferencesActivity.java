@@ -3,6 +3,8 @@ package com.example.kamal.attendanceapp.activities;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.kamal.attendanceapp.R;
+
 public class PreferencesActivity extends AppCompatActivity {
 
     @Override
