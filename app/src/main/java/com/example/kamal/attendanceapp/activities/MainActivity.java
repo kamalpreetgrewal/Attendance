@@ -8,6 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import com.example.kamal.attendanceapp.R;
+import com.example.kamal.attendanceapp.models.DrawerItem;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private RecyclerView.Adapter adapter;
     private ActionBarDrawerToggle barDrawerToggle;
+    private List<DrawerItem> navigationItemsList;
+
+    public String HEADER_NAME = "Kamalpreet Grewal";
+    public String HEADER_IMAGE = R.mipmap.ic_launcher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.layout.toolbar);
         setSupportActionBar(toolbar);
+        navigationItemsList = new ArrayList<DrawerItem>();
     }
 }
